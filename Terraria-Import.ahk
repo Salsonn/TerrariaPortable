@@ -10,6 +10,8 @@ referenceFiles := basePath . "\Data\settings\import-files"
 referenceFolders := basePath . "\Data\settings\import-folders"
 referenceDLLs := basePath . "\Data\settings\import-DLLs"
 installPath := basePath . "\App\Terraria"
+
+MsgBox("Please locate and select your DRM-free Terraria installation folder in the upcoming dialog.")
 sourcePath := FileSelect("D1", A_ProgramFiles, "Locate Terraria's Install Folder")
 if sourcePath = "" 
 {
@@ -23,6 +25,7 @@ if DirExist(installPath)
 if FileExist(installPath)
     FileDelete(installPath)
 ;@Ahk2Exe-IgnoreEnd
+DirDelete(basePath . "Other")
 loop read referenceFolders
     DirCopy(sourcePath . "\" . A_LoopReadLine, installPath . "\" . A_LoopReadLine, true)
 loop read referenceFiles
