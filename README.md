@@ -8,6 +8,9 @@ yada yada releases page
 * Semi-automatic installer
 * Portable game data (technically options)
 
+## A Note on Versioning
+Everywhere that matters will follow the latest, known-compatible version of Terraria. The releases page will include a PAF (PortableApps Format) version to indicate the iteration of the PortableApp itself.
+
 ## Development
 Clone repo
 Install AutoHotkey
