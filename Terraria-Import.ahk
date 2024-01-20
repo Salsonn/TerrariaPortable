@@ -25,7 +25,9 @@ if DirExist(installPath)
 if FileExist(installPath)
     FileDelete(installPath)
 ;@Ahk2Exe-IgnoreEnd
-DirDelete(basePath . "Other")
+if DirExist(basePath . "\Other")
+    DirDelete(basePath . "\Other", Recurse := true)
+
 loop read referenceFolders
     DirCopy(sourcePath . "\" . A_LoopReadLine, installPath . "\" . A_LoopReadLine, true)
 loop read referenceFiles
