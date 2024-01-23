@@ -1,5 +1,6 @@
 # Terraria Portable
-This readme file is being thrown together now to be _heavily_ refined later, so yes: I know it sucks.
+
+![Terraria Portable Logo](https://raw.githubusercontent.com/Salsonn/TerrariaPortable/main/App/AppInfo/Launcher/Splash.png)
 
 ## Features
 * Semi-automatic installer
